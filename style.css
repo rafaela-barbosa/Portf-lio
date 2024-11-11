@@ -1,0 +1,220 @@
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 50%; 
+    transform: translateX(-50%);
+    width: 90%;
+    height: 6%;
+    z-index: 1000;
+    background-color: #00000060;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; 
+}
+
+nav .left, nav .center, nav .right {
+    display: flex;
+    align-items: center;
+}
+
+nav .center {
+    justify-content: center; 
+    flex-grow: 1;
+    font-size: 12px;
+}
+
+nav .left, nav .right {
+    width: auto; 
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+nav a:hover {
+    text-decoration:underline;
+  }
+
+nav .social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+nav .social-icons i {
+    color: #8732cd;
+    font-size: 15px;
+}
+nav .social-icons li{
+    list-style-type: none;
+}
+
+nav .name {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.header{
+    width: 90%;
+    height: 100vh;
+    justify-content: center;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-size: 25px;
+}
+.header strong{
+    color: #ff0077;
+}
+.header p {
+    font-size: 15px;
+    width: 10%;
+    height: 3vh;
+    padding: 10px;
+    border: 2px solid transparent ; /* Define uma borda transparente inicialmente */
+    border-image: linear-gradient(45deg, #ff0077, #8732cd, #03c3e6) 1; /* Aplica o gradiente na borda */
+    text-align: center; /* Centraliza o texto */
+    border-radius: 15px;
+    margin-top: 10px;
+}
+.header p a{
+    text-decoration: none;
+    color: white;
+}
+.sobremim{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sobremim p{
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 35%;
+    margin-right: 50px;
+    padding: 10px;
+}
+.sobremim strong{
+    color: #ff0077;
+    font-size: 30px;
+}
+.project-section {
+    display: flex;
+    flex-direction: column; /* Coloca os projetos em coluna */
+    gap: 20px;
+    padding: 40px;
+  }
+  
+  .project-card {
+    display: flex;
+    justify-content: space-between; /* Coloca os elementos nas extremidades (texto e imagens) */
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .project-info {
+    flex: 1; /* Dá o mesmo espaço para o texto de cada projeto */
+    max-width: 50%; /* Limita o tamanho máximo do texto */
+    padding: 10px;
+  }
+  
+  .project-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .project-info p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+  }
+  
+  .carousel {
+    position: relative;
+    width: 40%;
+    height: 55vh;
+    overflow: hidden;
+  }
+  
+  .carousel-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .carousel-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1%;
+  }
+  
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .carousel-button.prev {
+    left: 0;
+  }
+  
+  .carousel-button.next {
+    right: 0;
+  }
+#contact{
+  border: 5px solid transparent ;
+  border-image: linear-gradient(45deg, #ff0077, #8732cd, #03c3e6) 1;
+  padding: 25px;
+  margin: 25px;
+  justify-items: center;
+  width: 55%;
+  height: 60vh;
+  align-items: center;
+  top: 65px;
+  left: 23%;
+  position: relative;
+}
+label{
+  color: white;
+  font-weight: 500;
+}
+
+input{
+  background-color:rgb(199,199,199);
+  border-color: rgb(199, 199, 199);
+  border-radius: 5px;
+  height: 5vh;
+}
+textarea{
+  background-color: rgb(199, 199,199);
+  border-radius: 5px;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#botao{
+  width: 30%;
+  background-color: white;
+  border-image: linear-gradient(45deg, #ff0077, #8732cd, #03c3e6) 1;
+}

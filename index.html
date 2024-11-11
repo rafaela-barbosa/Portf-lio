@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>Portfólio</title>
+</head>
+<body>
+    <div class="cabecalho">
+        <nav>
+            <div class="left">
+                <span class="name">Rafaela Barbosa</span>
+            </div>
+            <div class="center">
+                <a href="#sobremim">About Me</a>
+                <a href="#project-section">Projects</a>
+                <a href="#contact">Contact Me</a>
+            </div>
+            <div class="right">
+                <div class="social-icons">
+                    <a href="https://github.com/rafaela-barbosa" target="_blank">
+                        <li><i class="fa-brands fa-github"></i></li></a>
+                    <a href="https://www.linkedin.com/in/rafaela-barbosa-97bba9247/" target="_blank">
+                        <li><i class="fa-brands fa-linkedin"></i></li></a>
+                    <a href="https://www.instagram.com/rafaelabarbosa520/" target="_blank">
+                        <li><i class="fa-brands fa-instagram"></i></li></a>
+                </div>
+        </nav>
+    </div>
+
+    <section class="header">
+        <h1>Hi,<br> I'm <strong>Rafaela</strong>, <br>software engineering student.</h1>
+        <p><a href="#contact">Contact me!</a></p>
+    </section>
+
+    <section id="sobremim" class="sobremim">
+        <p><strong>About Me</strong><br><br>Hi! My name is Rafaela Barbosa, a Software Engineering student
+            and an enthusiast of new technologies. I am still in development
+            — just like the projects I share here! This portfolio is
+            part of an academic activity, where I explore HTML, CSS and JavaScript
+            to build a solid foundation in web development.</p>
+        <p><strong>Main Objective</strong><br><br>My goal is to transform every learning experience, inside and outside the classroom, 
+            into something practical and shareable. By documenting each mini-project on GitHub, I want to create a space to 
+            showcase my progress and explore the impact of my work. I enjoy building experiences on the front-end, but my 
+            true passion lies in the back-end. I'm currently delving into Python and Node.js.</p>
+    </section>
+    <section id="project-section" class="project-section">
+        <div class="project-card">
+          <div class="project-info">
+            <h3>To-Do-List</h3>
+            <p>The "To-Do List" project aims to put into practice the knowledge acquired in JavaScript, CSS and HTML. Developed as part of an academic exercise, this project aims to create a simple and functional application, allowing the user to add, mark as completed and remove tasks from an interactive list.</p>
+
+            </div>
+          <div class="carousel">
+            <div class="carousel-container">
+              <img src="img/projeto1-img1.jpg" alt="Imagem 1 do Projeto 1">
+              <img src="img/projeto1-img2.png" alt="Imagem 2 do Projeto 1">
+              <img src="img/projeto1-img3.jpg" alt="Imagem 3 do Projeto 1">
+            </div>
+            <button class="carousel-button prev" onclick="prevSlide(0)">&#10094;</button>
+            <button class="carousel-button next" onclick="nextSlide(0)">&#10095;</button>
+          </div>
+        </div>
+    
+        <div class="project-card">
+          <div class="project-info">
+            <h3>Website for a Celebrity</h3>
+            <p>The goal of this project was to improve the knowledge acquired in HTML and CSS in the creation of static pages. Develop a personal website for a celebrity, with a simple and efficient structure, providing a visually appealing and intuitive experience to fans and visitors.</p>
+        </div>
+          <div class="carousel">
+            <div class="carousel-container">
+              <img src="img/projeto2-img1.png" alt="Imagem 1 do Projeto 2">
+              <img src="img/projeto2-img2.png" alt="Imagem 2 do Projeto 2">
+              <img src="img/projeto2-img3.png" alt="Imagem 3 do Projeto 2">
+            </div>
+            <button class="carousel-button prev" onclick="prevSlide(1)">&#10094;</button>
+            <button class="carousel-button next" onclick="nextSlide(1)">&#10095;</button>
+          </div>
+        </div>
+    
+        <div class="project-card">
+          <div class="project-info">
+            <h3>Informative Website</h3>
+            <p>The goal of this project was to explore different HTML and CSS configurations and techniques, with a focus on creating an informative static website. The website was developed to provide educational content on a specific topic, using a well-organized and easy-to-navigate structure.</p>
+        </div>
+          <div class="carousel">
+            <div class="carousel-container">
+              <img src="img/projeto3-img1.png" alt="Imagem 1 do Projeto 3">
+              <img src="img/projeto3-img2.png" alt="Imagem 2 do Projeto 3">
+              <img src="img/projeto3-img3.png" alt="Imagem 3 do Projeto 3">
+            </div>
+            <button class="carousel-button prev" onclick="prevSlide(2)">&#10094;</button>
+            <button class="carousel-button next" onclick="nextSlide(2)">&#10095;</button>
+          </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="contato">
+      <form>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name">
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="subject">Subject</label>
+        <textarea id="story" name="story" rows="5" cols="33"></textarea>
+
+        <input id="botao" type="button" onclick="alert('Thank you for your message!')" value="Submit">
+      </form>
+    </section>
+
+</body>
+</html>
